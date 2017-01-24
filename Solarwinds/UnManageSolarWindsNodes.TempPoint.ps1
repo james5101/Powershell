@@ -42,7 +42,7 @@ function Unmanage-SWNode
             Position = 2
         )]
         [ValidateNotNullOrEmpty()]
-        $MinutesToUnManage = 60
+        $MinutesToUnManage = 600
 
     )
 
