@@ -6,7 +6,7 @@
 .EXAMPLE
    Unmanage-Node -ComputerName 'computername' -Cred Username -MinutesToUnManage 60 -Verbose
 .EXAMPLE
-   gc C:\Users\username\Desktop\mycomps.txt | Unmanage-Node -Cred OCMDOMAIN\username -MinutesToUnManage 60 -Verbose
+   gc C:\Users\username\Desktop\mycomps.txt | Unmanage-Node -Cred username -MinutesToUnManage 60 -Verbose
 .EXAMPLE 
     Unmanage-SWNode -ComputerName (gc C:\Users\username\Desktop\mycomps.txt) -Cred username -Verbose
 .NOTES
