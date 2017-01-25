@@ -53,7 +53,7 @@ function Unmanage-SWNode
             Add-PSSnapin "SwisSnapin"
         }
 
-        $hostname = "dc4-ocp-m-ul06.onecallmedical.com"
+        $hostname = "ComputerNameHere"
         $swis = Connect-Swis -Hostname $hostname -Credential $cred 
         $now = [DateTime]::UtcNow
         $later = $now.AddMinutes($MinutesToUnManage)
