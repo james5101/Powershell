@@ -70,12 +70,12 @@ function Test-TargetResource
 
                     "Property '{0}': Current value '{1}'; Desired value: '{2}'." -f $PropertyName, $TargetResource."$PropertyName", $_.Value |
                     Write-Verbose
-				}
-				else
-				{
-					$InDesiredState = $true
-				}
-			}
+		}
+		else
+		{
+			$InDesiredState = $true
+		}
+	}
 	
 	if ($InDesiredState -eq $True)
 	{
