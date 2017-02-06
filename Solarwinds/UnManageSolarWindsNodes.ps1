@@ -13,7 +13,7 @@
 	THIS REQUIRES INSTALL OF THE SWISSNAPIN
 		https://github.com/solarwinds/OrionSDK
 #>
-#Requires -PSSnapin SwisSnapin
+
 function Unmanage-SWNode
 {
     [CmdletBinding()]
