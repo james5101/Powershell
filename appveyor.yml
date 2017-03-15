@@ -9,5 +9,5 @@ install:
     - ps: Get-PackageProvider -Name NuGet -ForceBootstrap -Force
 
 test_script:
-    - ps: |
-        Invoke-Pester
+    - ps: $env:PSModulePath
+    - ps: Get-Module -verbose
