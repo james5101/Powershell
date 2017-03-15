@@ -10,4 +10,4 @@ install:
 
 test_script:
     - ps: Invoke-Pester .\appveyor.tets.ps1
-    - ps: Get-Module -verbose
+    
