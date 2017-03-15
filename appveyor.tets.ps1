@@ -2,5 +2,7 @@ ipmo Pester
 
 
 Describe "Import Module"{
-    Import-Module MSMQQueueManagerQuota.psm1 | should not throw
+    It "Imports" {
+    {Import-Module .\MSMQQueueManagerQuota.psm1} | Should Not throw
+    }
 }
