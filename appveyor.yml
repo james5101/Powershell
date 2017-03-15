@@ -10,4 +10,4 @@ install:
 
 test_script:
     - ps: |
-    Invoke-Pester
+        Invoke-Pester
