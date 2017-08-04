@@ -1,0 +1,74 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+
+    "virtualMachineName": {
+      "value": "LOADBALTEST"
+    },
+    "adminUsername": {
+      "value": "localadmin"
+    },
+
+    "adminPassword": {
+      "value": "null"
+    },
+
+    "virtualMachineSize": {
+      "value": "Standard_D3"
+    },
+
+
+    "numberOfInstances": {
+      "value": 2
+    },
+
+    "availabilitySetName": {
+      "value": "loadbalancetest"
+    },
+
+    "sizeOfEachDataDiskInGB": {
+      "value": "1022"
+    },
+
+    "existingVNETName": {
+      "value": "null"
+    },
+    "existingSubnetName": {
+      "value": "null"
+    },
+
+
+    "virtualNetworkResourceGroup": {
+      "value": "null"
+    },
+    "imageSku": {
+      "value": "2016-Datacenter"
+    },
+    "domainToJoin": {
+      "value": "null"
+    },
+    "domainUsername": {
+      "value": "null"
+    },
+    "domainJoinOptions": {
+      "value": 3
+    },
+
+    "domainPassword": {
+      "value": "null" 
+      }
+    },
+
+    "ouPath": {
+      "value": "null"
+    },
+    "loadBalancerName": {
+      "value": "loadbalancetest"
+    },
+
+    "loadBalancerSessionPersistance": {
+      "value": "Default"
+    }
+  }
+}
