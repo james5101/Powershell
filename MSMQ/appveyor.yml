@@ -1,1 +1,14 @@
 
+build: off
+
+clone_folder: C:\Users\jnoonan\Documents\GitHub\Powershell\Powershell\DSC\MSMQQueueManagerQuota
+
+install:
+    - cinst -y pester
+    - ps: Import-Module -Name '.\MSMQQueueManagerQuota.psm1' -Force -verbose
+    - ps: Pop-Location
+    - ps: Get-PackageProvider -Name NuGet -ForceBootstrap -Force
+
+test_script:
+    - ps: Invoke-Pester .\appveyor.tets.ps1
+    
