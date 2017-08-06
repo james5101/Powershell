@@ -53,7 +53,7 @@ function Unmanage-SWNode
             Add-PSSnapin "SwisSnapin"
         }
 
-        $hostname = "ComputernameHere"
+        $hostname = "SolarWindsHostName"
         $swis = Connect-Swis -Hostname $hostname -Credential $cred 
         $now = [DateTime]::UtcNow
         $later = $now.AddMinutes($MinutesToUnManage)
